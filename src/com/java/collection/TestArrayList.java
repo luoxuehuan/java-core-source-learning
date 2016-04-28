@@ -6,6 +6,9 @@ import java.util.Arrays;
 /**
  * ArrayList
  * @author lxh
+ * 
+ * 1.概述
+ * 
  * ArrayList是List接口的可变数组的实现。
  * 还提供了一些方法 操作内部用来存储列表的数组的大小。
  * 每个ArrayList实例都有一个容量，该容量是指用来存储列表元素的数组的大小。
@@ -17,9 +20,20 @@ import java.util.Arrays;
  * 
  * 注意：此实现不是同步的。。3
  * 
+ * 2.实现
+ * 
+ * 2.1底层实现
+ * 2.2构造方法
+ * 2.3存储
+ * 2.4读取
+ * 2.5删除
+ * 2.6容量调整
+ * 2.7快速失败Fail-Fast机制
  * 
  * 
  * 
+ * 
+ * 其他参考：
  */
 
 public class TestArrayList {
@@ -62,10 +76,8 @@ public class TestArrayList {
     
     
     
-    /**
-     * 容量调整
-     */
-    
+   
+    //2.6 容量调整
     
     /**
      * 把调整到 ArrayList的当前size.
