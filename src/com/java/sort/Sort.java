@@ -2,9 +2,10 @@ package com.java.sort;
 
 
 /**
- * ÅÅĞò
- * @author lxh
+ * æ’åº
+ * å‚è€ƒåšæ–‡ï¼š
  * 
+ * @author lxh
  *
  */
 public class Sort {
@@ -20,9 +21,9 @@ public class Sort {
 	
 	
 	/**
-	 * 1.Ã°ÅİÅÅĞò
+	 * 1.å†’æ³¡æ’åº
 	 * @param arr
-	 * Ã°ÅİÅÅĞòµÄÊ±¼ä¸´ÔÓ¶ÈÎªO(n^2)¡£
+	 * å†’æ³¡æ’åºçš„æ—¶é—´å¤æ‚åº¦ä¸ºO(n^2)ã€‚
 	 */
 	public static void bubblesort(int[] arr){
 		if(arr==null||arr.length==0){
@@ -31,7 +32,7 @@ public class Sort {
 			int len  =arr.length;
 			for(int i=0;i<len-1;i++){
 				/**
-				 * Ã°ÅİÅÅĞòÊÇÏàÁÚÔªËØ±È½Ï°ÑĞ¡µÄ"½»»»"µ½×îÇ°Ãæ.
+				 * å†’æ³¡æ’åºæ˜¯ç›¸é‚»å…ƒç´ æ¯”è¾ƒæŠŠå°çš„"äº¤æ¢"åˆ°æœ€å‰é¢.
 				 */
 				for(int j=len-1;j>i;j--){
 					if(arr[j]<arr[j-1]){
@@ -39,7 +40,7 @@ public class Sort {
 					}
 				}
 			}
-			System.out.println("Ã°ÅİÅÅĞò£º");
+			System.out.println("å†’æ³¡æ’åºï¼š");
 			result(arr);
 			System.out.println("");
 		}
@@ -47,10 +48,10 @@ public class Sort {
 	
 	
 	/**
-	 * 2.Ñ¡ÔñÅÅĞò
-	 * Ã°ÅİÅÅĞòÊÇÍ¨¹ıÏàÁÚµÄ±È½ÏºÍ½»»»
-	 * ¶øÑ¡ÔñÅÅĞòÊÇÍ¨¹ı¶ÔÕûÌåµÄÑ¡Ôñ¡£
-	 * Ñ¡ÔñÅÅĞòµÄÊ±¼ä¸´ÔÓ¶ÈÎªO(n^2)
+	 * 2.é€‰æ‹©æ’åº
+	 * å†’æ³¡æ’åºæ˜¯é€šè¿‡ç›¸é‚»çš„æ¯”è¾ƒå’Œäº¤æ¢
+	 * è€Œé€‰æ‹©æ’åºæ˜¯é€šè¿‡å¯¹æ•´ä½“çš„é€‰æ‹©ã€‚
+	 * é€‰æ‹©æ’åºçš„æ—¶é—´å¤æ‚åº¦ä¸ºO(n^2)
 	 * @param arr
 	 * @return
 	 */
@@ -64,32 +65,32 @@ public class Sort {
 				
 				 minIndex = i;
 				/**
-				 * Ò»¶¨Òª·ÖÇåµÚ¶ş¸öforÑ­»·µÄÌõ¼ş,jÃ¿´Î¶¼ÊÇi+1¿ªÊ¼,¶ø²»ÊÇ´Ó1¿ªÊ¼
+				 * ä¸€å®šè¦åˆ†æ¸…ç¬¬äºŒä¸ªforå¾ªç¯çš„æ¡ä»¶,jæ¯æ¬¡éƒ½æ˜¯i+1å¼€å§‹,è€Œä¸æ˜¯ä»1å¼€å§‹
 				 */
 				for(int j=i+1;j<len;j++){
 					/**
-					 * Ö»ÊÇÑ¡ÔñÅÅĞòÖ»ÓĞÔÚÈ·¶¨ÁË×îĞ¡ÊıµÄÇ°ÌáÏÂ²Å½øĞĞ½»»»£¬´ó´ó¼õÉÙÁË½»»»µÄ´ÎÊı.
+					 * åªæ˜¯é€‰æ‹©æ’åºåªæœ‰åœ¨ç¡®å®šäº†æœ€å°æ•°çš„å‰æä¸‹æ‰è¿›è¡Œäº¤æ¢ï¼Œå¤§å¤§å‡å°‘äº†äº¤æ¢çš„æ¬¡æ•°.
 					 */
 					if(arr[j]<arr[i]){
-						//µ«ÊÇÏÂÃæµÄ·½Ê½»¹ÊÇÓĞÈ±Ïİ,½øĞĞÁË¶à´ÎµÄ½»»»¡£¸üºÃµÄ·½Ê½ÒıÈë minIndex = j;
+						//ä½†æ˜¯ä¸‹é¢çš„æ–¹å¼è¿˜æ˜¯æœ‰ç¼ºé™·,è¿›è¡Œäº†å¤šæ¬¡çš„äº¤æ¢ã€‚æ›´å¥½çš„æ–¹å¼å¼•å…¥ minIndex = j;
 						/*swap(arr,i,j);*/
 						minIndex = j;
 					}
 				}
 				
-				if(minIndex != i) { //Èç¹ûminIndex²»Îªi£¬ËµÃ÷ÕÒµ½ÁË¸üĞ¡µÄÖµ£¬½»»»Ö®¡£
+				if(minIndex != i) { //å¦‚æœminIndexä¸ä¸ºiï¼Œè¯´æ˜æ‰¾åˆ°äº†æ›´å°çš„å€¼ï¼Œäº¤æ¢ä¹‹ã€‚
 	                swap(arr, i, minIndex);
 	            }
 			}
 			
-			System.out.println("Ñ¡ÔñÅÅĞò£º");
+			System.out.println("é€‰æ‹©æ’åºï¼š");
 			result(arr);
 			System.out.println("");
 		}
 	}
 	
 	/**
-	 * ²åÈëÅÅĞò
+	 * æ’å…¥æ’åº
 	 * @param arr
 	 */
 	public static void InsertSort(int[] arr){
@@ -106,10 +107,10 @@ public class Sort {
 	
 	
 	/**
-	 * Êı×éÀïÁ½¸öÏÂ±êµÄÊı¾İ½»»»
-	 * @param arr Êı×é
-	 * @param i	ÏÂ±êi
-	 * @param j ÏÂ±êj
+	 * æ•°ç»„é‡Œä¸¤ä¸ªä¸‹æ ‡çš„æ•°æ®äº¤æ¢
+	 * @param arr æ•°ç»„
+	 * @param i	ä¸‹æ ‡i
+	 * @param j ä¸‹æ ‡j
 	 */
 	public static void swap(int[] arr,int i,int j){
 		int temp = arr[j];
@@ -118,7 +119,7 @@ public class Sort {
 	}
 	
 	/**
-	 * ´òÓ¡½á¹û
+	 * æ‰“å°ç»“æœ
 	 * @param data
 	 */
 	public static void result(int[] data){

@@ -1,14 +1,37 @@
 package com.java.util;
-
+/**
+ * ç¬¬ä¸€è¯¾ï¼š 
+ * java åŸºæœ¬æ•°æ®ç±»å‹ å’Œstring çš„å¸¸é‡æ± 
+ * 
+ * boolean å…¨éƒ¨ç¼“å­˜
+ * byteå…¨éƒ¨ç¼“å­˜
+ * character <==127ç¼“å­˜
+ * short
+ * long
+ * 
+ * double æ²¡æœ‰ç¼“å­˜
+ * float æ²¡æœ‰ç¼“å­˜
+ * @author lxh
+ *
+ */
 public class TestString {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		StringBuffer a =null;
-		StringBuilder b =null;
-		String c = null;
+		Integer a = new Integer(5);
+		Integer b = new Integer(5);
+		a = Integer.reverse(a);
 		
-		
+		/*Integer e = new Integer("ae");
+		System.out.println(e);*/
+		/**
+		 *	Integer a = 5;
+		 *	Integer b = 5;
+		 * 	IntegerCache 
+		 * -128 åˆ°127 æ˜¯ä»ç¼“å­˜é‡Œæ‹¿çš„
+		 */
+	 	Integer c = 128;
+	 	Integer d = 128;
+	 	
 	 	/**
 	 	 * true
 	 	 * 
@@ -18,14 +41,14 @@ public class TestString {
 	 	String str ="hello";
 	 	String str1 = "hello";
 	 	/**
-	 	 * string pool»º´æ
-	 	 * Ã»ÕÒµ½ ½¨ Ò»¸ö
+	 	 * string poolç¼“å­˜
+	 	 * æ²¡æ‰¾åˆ° å»º ä¸€ä¸ª
 	 	 * 
-	 	 * ÕÒµ½  ·µ»Ø hello
+	 	 * æ‰¾åˆ°  è¿”å› hello
 	 	 * 
-	 	 * µÚÒ»´ÎÓöµ½µÄ Ê±ºò»º´æ
+	 	 * ç¬¬ä¸€æ¬¡é‡åˆ°çš„ æ—¶å€™ç¼“å­˜
 	 	 * 
-	 	 * integer ÊÇÆô¶¯ ¾Í»º´æ
+	 	 * integer æ˜¯å¯åŠ¨ å°±ç¼“å­˜
 	 	 */
 	 	System.out.println(str == str1);
 	 	
@@ -33,11 +56,11 @@ public class TestString {
 	 	/**
 	 	 * false
 	 	 * 
-	 	 * new ÊÇÔÚÄÚ´æ¿Õ¼äÉêÇëÁËÒ»¿é¿Õ¼ä
+	 	 * new æ˜¯åœ¨å†…å­˜ç©ºé—´ç”³è¯·äº†ä¸€å—ç©ºé—´
 	 	 */
 	 	String str3 = new String("hello2");
 	 	/**
-	 	 * ÈÔÈ» ÊÇÔÚ string poolÖĞ
+	 	 * ä»ç„¶ æ˜¯åœ¨ string poolä¸­
 	 	 */
 	 	String str4 = "hello2";
 	 	
@@ -46,35 +69,36 @@ public class TestString {
 	 	/**
 	 	 * false
 	 	 * 
-	 	 * new ÊÇÔÚÄÚ´æ¿Õ¼äÉêÇëÁËÒ»¿é¿Õ¼ä
+	 	 * new æ˜¯åœ¨å†…å­˜ç©ºé—´ç”³è¯·äº†ä¸€å—ç©ºé—´
 	 	 */
 	 	String str5 = new String("hello2");
 	 	/**
-	 	 * new Ò²ÊÇÔÚÄÚ´æ¿Õ¼äÉêÇëÁËÒ»¿é¿Õ¼ä
+	 	 * new ä¹Ÿæ˜¯åœ¨å†…å­˜ç©ºé—´ç”³è¯·äº†ä¸€å—ç©ºé—´
 	 	 */
 	 	String str6 = new String("hello2");
 	 	
 		
-	
+		System.out.println(c == d);
 		System.out.println(a.equals(b));
 		
 		/**
-		 * jdk ÖĞ´óÁ¿ ²ÉÓÃÎ»ÔËËã 
-		 * ´ó´ó Ìá¸ßĞ§ÂÊ
-		 * == ±È½Ïstack Õ»  ´æ ÕâÖ¸ÏòÄÚ´æ¿Õ¼äµÄµØÖ·
-		 * equal ±È½Ïheap  ¶Ñ ÄÚ´æ¿Õ¼ä
-		 * 1.heapÊÇ¶Ñ£¬stackÊÇÕ»¡£
-		 * 2.stackµÄ¿Õ¼äÓÉ²Ù×÷ÏµÍ³×Ô¶¯·ÖÅäºÍÊÍ·Å£¬heapµÄ¿Õ¼äÊÇÊÖ¶¯ÉêÇëºÍÊÍ·ÅµÄ£¬heap³£ÓÃnew¹Ø¼ü×ÖÀ´·ÖÅä¡£
-		 * 3.stack¿Õ¼äÓĞÏŞ£¬heapµÄ¿Õ¼äÊÇºÜ´óµÄ×ÔÓÉÇø¡£
-		 * ÔÚJavaÖĞ£¬ÈôÖ»ÊÇÉùÃ÷Ò»¸ö¶ÔÏó£¬ÔòÏÈÔÚÕ»ÄÚ´æÖĞÎªÆä·ÖÅäµØÖ·¿Õ¼ä£¬ÈôÔÙnewÒ»ÏÂ£¬ÊµÀı»¯Ëü£¬ÔòÔÚ¶ÑÄÚ´æÖĞÎªÆä·ÖÅäµØÖ·¡£
-		 * 4.¾ÙÀı£ºÊı¾İÀàĞÍ ±äÁ¿Ãû£»ÕâÑù¶¨ÒåµÄ¶«Î÷ÔÚÕ»Çø¡£
-		 * Èç£ºObject a =null; Ö»ÔÚÕ»ÄÚ´æÖĞ·ÖÅä¿Õ¼änew Êı¾İÀàĞÍ();»òÕßmalloc(³¤¶È); 
-		 * ÕâÑù¶¨ÒåµÄ¶«Î÷¾ÍÔÚ¶ÑÇøÈç£ºObject b =new Object(); ÔòÔÚ¶ÑÄÚ´æÖĞ·ÖÅä¿Õ¼ä
+		 * jdk ä¸­å¤§é‡ é‡‡ç”¨ä½è¿ç®— 
+		 * å¤§å¤§ æé«˜æ•ˆç‡
+		 * == æ¯”è¾ƒstack æ ˆ  å­˜ è¿™æŒ‡å‘å†…å­˜ç©ºé—´çš„åœ°å€
+		 * equal æ¯”è¾ƒheap  å † å†…å­˜ç©ºé—´
+		 * 1.heapæ˜¯å †ï¼Œstackæ˜¯æ ˆã€‚
+		 * 2.stackçš„ç©ºé—´ç”±æ“ä½œç³»ç»Ÿè‡ªåŠ¨åˆ†é…å’Œé‡Šæ”¾ï¼Œheapçš„ç©ºé—´æ˜¯æ‰‹åŠ¨ç”³è¯·å’Œé‡Šæ”¾çš„ï¼Œheapå¸¸ç”¨newå…³é”®å­—æ¥åˆ†é…ã€‚
+		 * 3.stackç©ºé—´æœ‰é™ï¼Œheapçš„ç©ºé—´æ˜¯å¾ˆå¤§çš„è‡ªç”±åŒºã€‚
+		 * åœ¨Javaä¸­ï¼Œè‹¥åªæ˜¯å£°æ˜ä¸€ä¸ªå¯¹è±¡ï¼Œåˆ™å…ˆåœ¨æ ˆå†…å­˜ä¸­ä¸ºå…¶åˆ†é…åœ°å€ç©ºé—´ï¼Œè‹¥å†newä¸€ä¸‹ï¼Œå®ä¾‹åŒ–å®ƒï¼Œåˆ™åœ¨å †å†…å­˜ä¸­ä¸ºå…¶åˆ†é…åœ°å€ã€‚
+		 * 4.ä¸¾ä¾‹ï¼šæ•°æ®ç±»å‹ å˜é‡åï¼›è¿™æ ·å®šä¹‰çš„ä¸œè¥¿åœ¨æ ˆåŒºã€‚
+		 * å¦‚ï¼šObject a =null; åªåœ¨æ ˆå†…å­˜ä¸­åˆ†é…ç©ºé—´new æ•°æ®ç±»å‹();æˆ–è€…malloc(é•¿åº¦); 
+		 * è¿™æ ·å®šä¹‰çš„ä¸œè¥¿å°±åœ¨å †åŒºå¦‚ï¼šObject b =new Object(); åˆ™åœ¨å †å†…å­˜ä¸­åˆ†é…ç©ºé—´
 		 * 
-		 * ×÷Òµ£ºdigist
+		 * ä½œä¸šï¼šdigist
 		 */
 		
 		
+
 	}
 
 }

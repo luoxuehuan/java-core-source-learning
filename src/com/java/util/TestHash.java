@@ -1,18 +1,18 @@
 package com.java.util;
 
 /**
- * µÚ¶ş¿Î£º
- * ¸ßÉîµÄhashËã·¨
+ * ç¬¬äºŒè¯¾ï¼š
+ * é«˜æ·±çš„hashç®—æ³•
  * 
  * @author lxh
  * 
- * ·Ö²¼Ê½ ¸ºÕ®¾ùºâ
+ * åˆ†å¸ƒå¼ è´Ÿå€ºå‡è¡¡
  * 
- * Ñ­»·Ëã·¨
- * ¹şÏ£Ëã·¨
- * ×îÉÙÁ´½ÓËã·¨
- * ÏìÓ¦ËÙ¶ÈËã·¨
- * ¼ÓÈ¨·¨VIP
+ * å¾ªç¯ç®—æ³•
+ * å“ˆå¸Œç®—æ³•
+ * æœ€å°‘é“¾æ¥ç®—æ³•
+ * å“åº”é€Ÿåº¦ç®—æ³•
+ * åŠ æƒæ³•VIP
  *
  *
  */
@@ -22,7 +22,7 @@ public class TestHash {
 		// TODO Auto-generated method stub
 		
 		/**
-		 *  public native int hashCode(); ±¾µØ  cĞ´ µÄ¿´²»ÁË
+		 *  public native int hashCode(); æœ¬åœ°  cå†™ çš„çœ‹ä¸äº†
 		 *  
 		 */
 		Object j = null;

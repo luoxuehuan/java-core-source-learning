@@ -3,13 +3,13 @@ package com.java.util;
 public class NormalHash 
 {
 	/**
-     * ¼Ó·¨hash
+     * åŠ æ³•hash
      * 
      * @param key
-     *            ×Ö·û´®
+     *            å­—ç¬¦ä¸²
      * @param prime
-     *            Ò»¸öÖÊÊı
-     * @return hash½á¹û
+     *            ä¸€ä¸ªè´¨æ•°
+     * @return hashç»“æœ
      */
     public static int additiveHash(String key, int prime) {
         int hash, i;
@@ -19,13 +19,13 @@ public class NormalHash
     }
 
     /**
-     * Ğı×ªhash
+     * æ—‹è½¬hash
      * 
      * @param key
-     *            ÊäÈë×Ö·û´®
+     *            è¾“å…¥å­—ç¬¦ä¸²
      * @param prime
-     *            ÖÊÊı
-     * @return hashÖµ
+     *            è´¨æ•°
+     * @return hashå€¼
      */
     public static int rotatingHash(String key, int prime) {
         int hash, i;
@@ -37,16 +37,16 @@ public class NormalHash
 
 
     /**
-     * MASKÖµ£¬Ëæ±ãÕÒÒ»¸öÖµ£¬×îºÃÊÇÖÊÊı
+     * MASKå€¼ï¼Œéšä¾¿æ‰¾ä¸€ä¸ªå€¼ï¼Œæœ€å¥½æ˜¯è´¨æ•°
      */
     static int M_MASK = 0x8765fed1;
 
     /**
-     * Ò»´ÎÒ»¸öhash
+     * ä¸€æ¬¡ä¸€ä¸ªhash
      * 
      * @param key
-     *            ÊäÈë×Ö·û´®
-     * @return Êä³öhashÖµ
+     *            è¾“å…¥å­—ç¬¦ä¸²
+     * @return è¾“å‡ºhashå€¼
      */
     public static int oneByOneHash(String key) {
         int hash, i;
@@ -66,10 +66,10 @@ public class NormalHash
      * Bernstein's hash
      * 
      * @param key
-     *            ÊäÈë×Ö½ÚÊı×é
+     *            è¾“å…¥å­—èŠ‚æ•°ç»„
      * @param level
-     *            ³õÊ¼hash³£Á¿
-     * @return ½á¹ûhash
+     *            åˆå§‹hashå¸¸é‡
+     * @return ç»“æœhash
      */
     public static int bernstein(String key) {
         int hash = 0;
@@ -118,17 +118,17 @@ public class NormalHash
     }
 
     // LOOKUP3
-    // ¼ûBob Jenkins(3).cÎÄ¼ş
+    // è§Bob Jenkins(3).cæ–‡ä»¶
 
-    // 32Î»FNVËã·¨
+    // 32ä½FNVç®—æ³•
     static int M_SHIFT = 0;
 
     /**
-     * 32Î»µÄFNVËã·¨
+     * 32ä½çš„FNVç®—æ³•
      * 
      * @param data
-     *            Êı×é
-     * @return intÖµ
+     *            æ•°ç»„
+     * @return intå€¼
      */
     public static int FNVHash(byte[] data) {
         int hash = (int) 2166136261L;
@@ -140,11 +140,11 @@ public class NormalHash
     }
 
     /**
-     * ¸Ä½øµÄ32Î»FNVËã·¨1
+     * æ”¹è¿›çš„32ä½FNVç®—æ³•1
      * 
      * @param data
-     *            Êı×é
-     * @return intÖµ
+     *            æ•°ç»„
+     * @return intå€¼
      */
     public static int FNVHash1(byte[] data) {
         final int p = 16777619;
@@ -160,11 +160,11 @@ public class NormalHash
     }
 
     /**
-     * ¸Ä½øµÄ32Î»FNVËã·¨1
+     * æ”¹è¿›çš„32ä½FNVç®—æ³•1
      * 
      * @param data
-     *            ×Ö·û´®
-     * @return intÖµ
+     *            å­—ç¬¦ä¸²
+     * @return intå€¼
      */
     public static int FNVHash1(String data) {
         final int p = 16777619;
@@ -180,7 +180,7 @@ public class NormalHash
     }
 
     /**
-     * Thomas WangµÄËã·¨£¬ÕûÊıhash
+     * Thomas Wangçš„ç®—æ³•ï¼Œæ•´æ•°hash
      */
     public static int intHash(int key) {
         key += ~(key << 15);
@@ -193,10 +193,10 @@ public class NormalHash
     }
 
     /**
-     * RSËã·¨hash
+     * RSç®—æ³•hash
      * 
      * @param str
-     *            ×Ö·û´®
+     *            å­—ç¬¦ä¸²
      */
     public static int RSHash(String str) {
         int b = 378551;
@@ -214,7 +214,7 @@ public class NormalHash
     /* End Of RS Hash Function */
 
     /**
-     * JSËã·¨
+     * JSç®—æ³•
      */
     public static int JSHash(String str) {
         int hash = 1315423911;
@@ -229,7 +229,7 @@ public class NormalHash
     /* End Of JS Hash Function */
 
     /**
-     * PJWËã·¨
+     * PJWç®—æ³•
      */
     public static int PJWHash(String str) {
         int BitsInUnsignedInt = 32;
@@ -253,7 +253,7 @@ public class NormalHash
     /* End Of P. J. Weinberger Hash Function */
 
     /**
-     * ELFËã·¨
+     * ELFç®—æ³•
      */
     public static int ELFHash(String str) {
         int hash = 0;
@@ -273,7 +273,7 @@ public class NormalHash
     /* End Of ELF Hash Function */
 
     /**
-     * BKDRËã·¨
+     * BKDRç®—æ³•
      */
     public static int BKDRHash(String str) {
         int seed = 131; // 31 131 1313 13131 131313 etc..
@@ -289,7 +289,7 @@ public class NormalHash
     /* End Of BKDR Hash Function */
 
     /**
-     * SDBMËã·¨
+     * SDBMç®—æ³•
      */
     public static int SDBMHash(String str) {
         int hash = 0;
@@ -304,7 +304,7 @@ public class NormalHash
     /* End Of SDBM Hash Function */
 
     /**
-     * DJBËã·¨
+     * DJBç®—æ³•
      */
     public static int DJBHash(String str) {
         int hash = 5381;
@@ -319,7 +319,7 @@ public class NormalHash
     /* End Of DJB Hash Function */
 
     /**
-     * DEKËã·¨
+     * DEKç®—æ³•
      */
     public static int DEKHash(String str) {
         int hash = str.length();
@@ -334,7 +334,7 @@ public class NormalHash
     /* End Of DEK Hash Function */
 
     /**
-     * APËã·¨
+     * APç®—æ³•
      */
     public static int APHash(String str) {
         int hash = 0;
@@ -351,7 +351,7 @@ public class NormalHash
     /* End Of AP Hash Function */
 
     /**
-     * JAVA×Ô¼º´øµÄËã·¨
+     * JAVAè‡ªå·±å¸¦çš„ç®—æ³•
      */
     public static int java(String str) {
         int h = 0;
@@ -364,7 +364,7 @@ public class NormalHash
     }
 
     /**
-     * »ìºÏhashËã·¨£¬Êä³ö64Î»µÄÖµ
+     * æ··åˆhashç®—æ³•ï¼Œè¾“å‡º64ä½çš„å€¼
      */
     public static long mixHash(String str) {
         long hash = str.hashCode();

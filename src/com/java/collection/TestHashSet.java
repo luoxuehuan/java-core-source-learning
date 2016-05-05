@@ -1,6 +1,7 @@
 package com.java.collection;
 
 import java.util.AbstractSet;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
@@ -9,10 +10,37 @@ public class TestHashSet {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Map set =  (Map) new HashSet();
+		Map mp = new HashMap();
 	}
+	
+	/**
+	 * 一、HashSet的源码解析：
+	 * 【参考文档】http://www.cnblogs.com/xwdreamer/archive/2012/06/03/2532999.html
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	
+	
+	
+	
+	
+	
 
 	
 	/**
+	 * 
+	 * 二、与其他相比：
+	 * 
+	 * 与HashMap的不同点：
+	 * 
 	 * Set的集合里不允许对象有重复的值
 	 * 
 	 * 

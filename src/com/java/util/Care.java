@@ -8,11 +8,11 @@ import java.util.TreeMap;
 
 public class Care
 {
-	public class Shard<S> { // SÀà·â×°ÁË»úÆ÷½ÚµãµÄĞÅÏ¢ £¬Èçname¡¢password¡¢ip¡¢portµÈ   
+	public class Shard<S> { // Sç±»å°è£…äº†æœºå™¨èŠ‚ç‚¹çš„ä¿¡æ¯ ï¼Œå¦‚nameã€passwordã€ipã€portç­‰   
 		  
-	    private TreeMap<Long, S> nodes; // ĞéÄâ½Úµã   
-	    private List<S> shards; // ÕæÊµ»úÆ÷½Úµã   
-	    private final int NODE_NUM = 100; // Ã¿¸ö»úÆ÷½Úµã¹ØÁªµÄĞéÄâ½Úµã¸öÊı   
+	    private TreeMap<Long, S> nodes; // è™šæ‹ŸèŠ‚ç‚¹   
+	    private List<S> shards; // çœŸå®æœºå™¨èŠ‚ç‚¹   
+	    private final int NODE_NUM = 100; // æ¯ä¸ªæœºå™¨èŠ‚ç‚¹å…³è”çš„è™šæ‹ŸèŠ‚ç‚¹ä¸ªæ•°   
 	  
 	    public Shard(List<S> shards) {  
 	        super();  
@@ -20,30 +20,30 @@ public class Care
 	        init();  
 	    }  
 	  
-	    private void init() { // ³õÊ¼»¯Ò»ÖÂĞÔhash»·   
+	    private void init() { // åˆå§‹åŒ–ä¸€è‡´æ€§hashç¯   
 	        nodes = new TreeMap<Long, S>();  
-	        for (int i = 0; i != shards.size(); ++i) { // Ã¿¸öÕæÊµ»úÆ÷½Úµã¶¼ĞèÒª¹ØÁªĞéÄâ½Úµã   
+	        for (int i = 0; i != shards.size(); ++i) { // æ¯ä¸ªçœŸå®æœºå™¨èŠ‚ç‚¹éƒ½éœ€è¦å…³è”è™šæ‹ŸèŠ‚ç‚¹   
 	            final S shardInfo = shards.get(i);  
 	  
 	            for (int n = 0; n < NODE_NUM; n++)  
-	                // Ò»¸öÕæÊµ»úÆ÷½Úµã¹ØÁªNODE_NUM¸öĞéÄâ½Úµã   
+	                // ä¸€ä¸ªçœŸå®æœºå™¨èŠ‚ç‚¹å…³è”NODE_NUMä¸ªè™šæ‹ŸèŠ‚ç‚¹   
 	                nodes.put(hash("SHARD-" + i + "-NODE-" + n), shardInfo);  
 	  
 	        }  
 	    }  
 	  
 	    public S getShardInfo(String key) {  
-	        SortedMap<Long, S> tail = nodes.tailMap(hash(key)); // ÑØ»·µÄË³Ê±ÕëÕÒµ½Ò»¸öĞéÄâ½Úµã   
+	        SortedMap<Long, S> tail = nodes.tailMap(hash(key)); // æ²¿ç¯çš„é¡ºæ—¶é’ˆæ‰¾åˆ°ä¸€ä¸ªè™šæ‹ŸèŠ‚ç‚¹   
 	        if (tail.size() == 0) {  
 	            return nodes.get(nodes.firstKey());  
 	        }  
-	        return tail.get(tail.firstKey()); // ·µ»Ø¸ÃĞéÄâ½Úµã¶ÔÓ¦µÄÕæÊµ»úÆ÷½ÚµãµÄĞÅÏ¢   
+	        return tail.get(tail.firstKey()); // è¿”å›è¯¥è™šæ‹ŸèŠ‚ç‚¹å¯¹åº”çš„çœŸå®æœºå™¨èŠ‚ç‚¹çš„ä¿¡æ¯   
 	    }  
 	  
 	    /** 
-	     *  MurMurHashËã·¨£¬ÊÇ·Ç¼ÓÃÜHASHËã·¨£¬ĞÔÄÜºÜ¸ß£¬ 
-	     *  ±È´«Í³µÄCRC32,MD5£¬SHA-1£¨ÕâÁ½¸öËã·¨¶¼ÊÇ¼ÓÃÜHASHËã·¨£¬¸´ÔÓ¶È±¾Éí¾ÍºÜ¸ß£¬´øÀ´µÄĞÔÄÜÉÏµÄËğº¦Ò²²»¿É±ÜÃâ£© 
-	     *  µÈHASHËã·¨Òª¿ìºÜ¶à£¬¶øÇÒ¾İËµÕâ¸öËã·¨µÄÅö×²ÂÊºÜµÍ. 
+	     *  MurMurHashç®—æ³•ï¼Œæ˜¯éåŠ å¯†HASHç®—æ³•ï¼Œæ€§èƒ½å¾ˆé«˜ï¼Œ 
+	     *  æ¯”ä¼ ç»Ÿçš„CRC32,MD5ï¼ŒSHA-1ï¼ˆè¿™ä¸¤ä¸ªç®—æ³•éƒ½æ˜¯åŠ å¯†HASHç®—æ³•ï¼Œå¤æ‚åº¦æœ¬èº«å°±å¾ˆé«˜ï¼Œå¸¦æ¥çš„æ€§èƒ½ä¸Šçš„æŸå®³ä¹Ÿä¸å¯é¿å…ï¼‰ 
+	     *  ç­‰HASHç®—æ³•è¦å¿«å¾ˆå¤šï¼Œè€Œä¸”æ®è¯´è¿™ä¸ªç®—æ³•çš„ç¢°æ’ç‡å¾ˆä½. 
 	     */  
 	    private Long hash(String key) {  
 	          
