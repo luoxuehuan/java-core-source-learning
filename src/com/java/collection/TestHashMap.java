@@ -57,5 +57,12 @@ public class TestHashMap {
 		System.out.println((index - 1) & hash);
 
 	}
+	
+	/**
+	 * 线程不安全
+	 * 
+	 * 如果需要同步，可以用 Collections的synchronizedMap方法使HashMap具有同步的能力
+	 * 或者使用ConcurrentHashMap。 
+	 */
 
 }
