@@ -87,7 +87,7 @@ public class TestTreeMap {
 	 * 
 	 * 三、使用注意：
 	 * HashMap通常比TreeMap快一点(树和哈希表的数据结构使然)，建议多使用HashMap，
-	 * 在需要排序的Map时候才用TreeMap。
+	 * TreeMap： 在需要排序的时候使用，在一个map放入很多数据，需要按照什么规则排序显示的时候。
 	 * 
 	 * 
 	 */
