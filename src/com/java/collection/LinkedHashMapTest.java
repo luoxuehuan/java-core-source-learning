@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class TestLinkedHashMap {
+public class LinkedHashMapTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

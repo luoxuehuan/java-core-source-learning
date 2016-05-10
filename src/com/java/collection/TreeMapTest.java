@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class TestTreeMap {
+public class TreeMapTest {
 
 	public static void main(String[] args) {
 	
