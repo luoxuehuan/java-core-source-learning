@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 
-public class TestHashTable {
+public class HashTableTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
