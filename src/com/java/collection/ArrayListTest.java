@@ -36,7 +36,7 @@ import java.util.Arrays;
  * 其他参考：
  */
 
-public class TestArrayList {
+public class ArrayListTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
