@@ -16,7 +16,7 @@ import java.util.Map;
  * 那么在同一个位子上的元素将以链表的形式存放，（Java7）新加入的放在链头，最先加入的放在链尾。(Java8)新加入的放在链尾。
  *
  */
-public class TestHashMap {
+public class HashMapTest {
 
 	public static void main(String[] args) {
 		Map mp = new HashMap();
