@@ -1,11 +1,12 @@
 package com.java.net.tcp;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class ClientDemo {
+public class ClientDemo2 {
 
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		// TODO Auto-generated method stub
@@ -25,20 +26,22 @@ public class ClientDemo {
 		 * 4.关闭资源。
 		 */
 		
-		/**
-		 * 创建客户端socket服务。
-		 */
+	
 		Socket socket = new Socket("127.0.0.1",10002);
-		
-		/**
-		 * 获取socket流中的输出流。
-		 */
+	
 		OutputStream out = socket.getOutputStream();
-		
-		/**
-		 * 使用输出流将指定的数据写出去
-		 */
+	
 		out.write("tcp演示，哥们又来了".getBytes());
+		
+		
+		//获取服务端返回的数据，使用socket读取流。
+		InputStream in = socket.getInputStream();
+		byte[] buf = new byte[1024];
+		 
+		int len = in.read(buf);
+		String text = new String(buf,0,len);
+		System.out.println(":"+text);
+		
 		
 		//关闭资源（其实是将连接断开）
 		socket.close();

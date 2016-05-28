@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ServeDemo {
+public class ServeDemo2 {
 
 	public static void main(String[] args) throws IOException {
 		// 服务端接受客户端发送过来的数据，并打印在控制台上。
@@ -43,7 +43,7 @@ public class ServeDemo {
 		 * 获取连接过来的客户端对象。
 		 * accept()  侦听并接受到此套接字的连接。
 		 */
-		Socket s = ss.accept();
+		Socket s = ss.accept();//阻塞式。没有socket当然等着。
 		/**
 		 * 3.通过socket对象获取输入流，要读取客户端发来的数据。
 		 */
@@ -58,8 +58,14 @@ public class ServeDemo {
 		System.out.println("server"+text+s.getInetAddress().getHostAddress());
 		
 		
-	
-		
+		/**
+		 * 
+		 * 4.往回发。
+		 * 
+		 * 使用客户端socket对象的输出流给客户端返回数据
+		 */
+		OutputStream out = s.getOutputStream();
+		out.write("收到".getBytes());
 		
 		s.close();
 		ss.close();
