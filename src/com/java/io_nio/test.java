@@ -1,4 +1,4 @@
-package com.java.nio;
+package com.java.io_nio;
 
 public class test {
 
