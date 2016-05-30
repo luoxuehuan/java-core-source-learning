@@ -26,10 +26,15 @@ public class UploadPicClient {
 		//3,获取socket输出流，将读到图片数据发送给服务端。
 		OutputStream out = s.getOutputStream();
 		
+		
 		byte[] buf = new byte[1024];
 		
 		int len = 0;
 		
+		/*
+		 * the total number of bytes read into the buffer, 
+		 * or -1 if there is no more data because the end of the file has been reached.
+		 */
 		while((len=fis.read(buf))!=-1){
 			out.write(buf,0,len);
 		}

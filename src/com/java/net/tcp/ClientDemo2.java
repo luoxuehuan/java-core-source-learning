@@ -36,10 +36,17 @@ public class ClientDemo2 {
 		
 		//获取服务端返回的数据，使用socket读取流。
 		InputStream in = socket.getInputStream();
+		
+		//缓冲区数组 buf
 		byte[] buf = new byte[1024];
 		 
+		//从输入流中读取一定数量的字节，并将其存储在缓冲区数组 buf 中。
+		//buf长度为0 返回0;	If the length of b is zero, then no bytes are read and 0 is returned;
+		//读到末尾返回-1;	If no byte is available because the stream is at the end of the file, the value -1 is returned;
 		int len = in.read(buf);
+		
 		String text = new String(buf,0,len);
+		
 		System.out.println(":"+text);
 		
 		
