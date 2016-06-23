@@ -1,5 +1,6 @@
 package com.java.io_nio.io.inputoutputstream;
 
+import java.io.File;
 import java.io.FileWriter;
 
 public class ChaWriter {
@@ -15,6 +16,7 @@ public class ChaWriter {
 		 * 4.明确额外功能
 		 */
 		FileWriter f = null;
+		File f1 = null;
 	}
 
 }

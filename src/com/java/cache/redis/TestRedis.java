@@ -79,21 +79,21 @@ public class TestRedis {
     @Test  
     public void testList(){  
         //开始前，先移除所有的内容  
-        jedis.del("java framework");  
-        System.out.println(jedis.lrange("java framework",0,-1));  
+        jedis.del("big data");  
+        System.out.println(jedis.lrange("big data",0,-1));  
         //先向key java framework中存放三条数据  
-        jedis.lpush("java framework","spring");  
-        jedis.lpush("java framework","struts");  
-        jedis.lpush("java framework","hibernate");  
-        //再取出所有数据jedis.lrange是按范围取出，  
-        // 第一个是key，第二个是起始位置，第三个是结束位置，jedis.llen获取长度 -1表示取得所有  
+        jedis.lpush("big data","hadoop");  
+        jedis.lpush("big data","flink");  
+        jedis.lpush("big data","spark");  
+        //再取出所有数据jedis.lrange是按范围取出,
+        //第一个是key,第二个是起始位置,第三个是结束位置,jedis.llen获取长度 -1表示取得所有  
         System.out.println(jedis.lrange("java framework",0,-1));  
         
-        jedis.del("java framework");
-        jedis.rpush("java framework","spring");  
-        jedis.rpush("java framework","struts");  
-        jedis.rpush("java framework","hibernate"); 
-        System.out.println(jedis.lrange("java framework",0,-1));
+        jedis.del("big data");
+        jedis.rpush("big data","spark");  
+        jedis.rpush("big data","hadoop");  
+        jedis.rpush("big data","scala"); 
+        System.out.println(jedis.lrange("big data",0,-1));
     }  
     
     /** 
@@ -101,22 +101,23 @@ public class TestRedis {
      */  
     @Test  
     public void testSet(){  
-        //添加  
-        jedis.sadd("user","liuling");  
-        jedis.sadd("user","xinxin");  
-        jedis.sadd("user","ling");  
-        jedis.sadd("user","zhangxinxin");
-        jedis.sadd("user","who");  
+        //测试之前先删除
+    	jedis.del("data");
+        jedis.sadd("data","spark");  
+        jedis.sadd("data","scala");  
+        jedis.sadd("data","hadoop");  
+        jedis.sadd("data","kafka");
+        jedis.sadd("data","Zookeeper");  
         //移除noname  
-        jedis.srem("user","who");  
-        System.out.println(jedis.smembers("user"));//获取所有加入的value  
-        System.out.println(jedis.sismember("user", "who"));//判断 who 是否是user集合的元素  
-        System.out.println(jedis.srandmember("user"));  
-        System.out.println(jedis.scard("user"));//返回集合的元素个数  
+        jedis.srem("data","kafka");  
+        System.out.println("获取所有加入的value		"+jedis.smembers("data"));//获取所有加入的value  
+        System.out.println("判断 hadoop 是否是data集合的元素		"+jedis.sismember("data", "hadoop"));//判断 hadoop 是否是data集合的元素  
+        System.out.println("随机获取一个元素		"+jedis.srandmember("data"));  
+        System.out.println("返回集合的元素个数		"+jedis.scard("data"));//返回集合的元素个数  
     }  
   
     @Test  
-    public void test() throws InterruptedException {  
+    public void testSort() throws InterruptedException {  
         //jedis 排序  
         //注意，此处的rpush和lpush是List的操作。是一个双向链表（但从表现来看的）  
         jedis.del("a");//先清除数据，再加入数据进行测试  
@@ -125,7 +126,7 @@ public class TestRedis {
         jedis.lpush("a","3");  
         jedis.lpush("a","9");  
         System.out.println(jedis.lrange("a",0,-1));// [9, 3, 6, 1]  
-        System.out.println(jedis.sort("a")); //[1, 3, 6, 9]  //输入排序后结果  
+        System.out.println("输出排序后结果 "+jedis.sort("a")); //[1, 3, 6, 9]  
         System.out.println(jedis.lrange("a",0,-1));  
     }  
     
