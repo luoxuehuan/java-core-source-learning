@@ -49,8 +49,8 @@ public class TestRedis {
     public void testMap() {
         //-----添加数据----------  
         Map<String, String> map = new HashMap<String, String>();
-        map.put("name", "xinxin");
-        map.put("age", "22");
+        map.put("name", "spark");
+        map.put("age", "4");
         map.put("qq", "123456");
         jedis.hmset("user",map);
         //取出user中的name，执行结果:[minxr]-->注意结果是一个泛型的List  

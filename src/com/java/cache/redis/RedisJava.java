@@ -17,16 +17,8 @@ public class RedisJava {
 		// Get the stored data and print it
 		System.out.println("tch:: " + jedis.get("tch"));
 		
-		//Thread th = new Thread();
-		for(int i = 0 ;i<10;i++){
-			System.out.println(i);
-			Thread.wait(1000);
-		}
-		
 		
 	}
 
-	public static void s(){
-		
-	}
+	
 }
