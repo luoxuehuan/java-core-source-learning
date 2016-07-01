@@ -10,6 +10,27 @@ import org.junit.Test;
 
 import redis.clients.jedis.Jedis;
 
+
+/**
+ * 
+ * @author lxh
+ * 
+ * redis的安装：
+ * sudo apt-get update$sudo apt-get install redis-server
+ *
+ * 启动：
+ * redis-server
+ * 
+ * 连接客户端：
+ * redis-cli
+ * 
+ * 教程地址：
+ * http://www.yiibai.com/redis/redis_quick_guide.html
+ * 
+ * 官网实战地址：
+ * http://try.redis.io/
+ * 
+ */
 public class TestRedis {
     private Jedis jedis; 
     

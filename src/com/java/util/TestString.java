@@ -1,4 +1,7 @@
 package com.java.util;
+
+import java.util.Arrays;
+
 /**
  * 第一课： 
  * java 基本数据类型 和string 的常量池
@@ -19,6 +22,7 @@ public class TestString {
 	public static void main(String[] args) {
 		Integer a = new Integer(5);
 		Integer b = new Integer(5);
+		Arrays s;
 		a = Integer.reverse(a);
 		
 		/*Integer e = new Integer("ae");
