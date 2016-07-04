@@ -255,6 +255,8 @@ public class HashMapTest {
      * 
      * e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);
      */
+	
+	/*
     final TreeNode<K,V> putTreeVal(HashMap<K,V> map, Node<K,V>[] tab,
                                    int h, K k, V v) {
         Class<?> kc = null;
@@ -301,3 +303,5 @@ public class HashMapTest {
         }
     }
 }
+
+*/
