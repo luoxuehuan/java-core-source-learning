@@ -54,7 +54,7 @@ public class ReadKey {
 		
 		int ch = 0;//in.read()是堵塞式方法
 		while((ch = in.read())!=-1){
-			if()
+			if(true)
 			System.out.print((char)ch);
 		}
 	}
