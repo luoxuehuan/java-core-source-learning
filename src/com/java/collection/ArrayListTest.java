@@ -7,7 +7,7 @@ import java.util.Arrays;
  * ArrayList
  * @author lxh
  * 
- * 1.概述
+ * 1.概述 
  * 
  * ArrayList是List接口的可变数组的实现。
  * 还提供了一些方法 操作内部用来存储列表的数组的大小。
