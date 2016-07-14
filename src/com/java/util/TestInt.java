@@ -97,8 +97,33 @@ public class TestInt {
 		 * 作业：digist
 		 */
 		
-		
+		test123();
 
 	}
+	
+	
+	
+	public static void test123(){
+		Integer a = 1;
+		Integer b = 2;
+		Integer c = 3;
+		Integer d = 3;
+		Long e = 3L;
+		
+		/**
+		 * ==遇到算数运算会自动拆箱
+		 * equeal不处理数据转型。
+		 * true
+			true
+				false
+					true
+		 */
+		System.out.println(c == (a+b));
+		System.out.println(c.equals(a+b));
+		System.out.println(e.equals(a+b));//false。。。equeal不处理数据转型。
+		System.out.println(e == (a+b));//true。。。==遇到算数运算会自动拆箱
+	}
+	
+	
 
 }
