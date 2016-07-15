@@ -5,7 +5,7 @@ public class ATest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		AImpl a = new AImpl();
-		a.say(33);
+		a.say(333);
 		a.run();
 	}
 
