@@ -27,7 +27,7 @@ public class Send implements Runnable {
 				 * 192.168.1.255 是网波
 				 * 发给192.168.1.255就是发给1-254
 				 */
-				DatagramPacket dp = new DatagramPacket(buf, buf.length, InetAddress.getByName("127.0.0.1"), 10000);
+				DatagramPacket dp = new DatagramPacket(buf, buf.length, InetAddress.getByName("127.0.0.1"), 9999);
 				ds.send(dp);
 
 				if ("886".equals(line)) {
