@@ -72,14 +72,14 @@ public class MyBufferedReader {
 			
 		}
 		
-		
+		return 0;
 		
 		
 		
 	}
 	
 	public String myReadLine(){
-		
+		return "";
 	}
 
 }
