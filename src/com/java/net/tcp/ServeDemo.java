@@ -37,7 +37,7 @@ public class ServeDemo {
 		/**
 		 * 1.创建服务端对象。
 		 */
-		ServerSocket ss = new ServerSocket(10002);
+		ServerSocket ss = new ServerSocket(9999);
 		
 		/**
 		 * 获取连接过来的客户端对象。

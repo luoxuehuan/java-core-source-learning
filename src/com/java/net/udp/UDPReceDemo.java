@@ -20,7 +20,7 @@ public class UDPReceDemo {
 		
 		
 		//1,建立udp socket服务
-		DatagramSocket ds = new DatagramSocket(10000);
+		DatagramSocket ds = new DatagramSocket(9999);
 		
 		while(true){
 			//2,创建数据包，用于存储接收到的数据。方便用数据包对象的方法解析这些数据。                    

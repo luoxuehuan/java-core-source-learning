@@ -28,7 +28,7 @@ public class UDPSendDemo {
 			byte[] buf = line.getBytes();
 			
 			DatagramPacket dp = 	
-					new DatagramPacket(buf, buf.length,InetAddress.getByName("127.0.0.1"),10000);
+					new DatagramPacket(buf, buf.length,InetAddress.getByName("127.0.0.1"),9999);
 			ds.send(dp);
 			
 			if("886".equals(line)){
