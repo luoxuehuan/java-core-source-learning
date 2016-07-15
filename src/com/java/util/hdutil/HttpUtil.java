@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import org.apache.http.HttpEntity;
+/*import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;*/
 
 /**
  * 通过程序访问Http内容(主要利用IE的方式去获取内容)
@@ -25,8 +25,9 @@ public class HttpUtil {
 	 * @return html内容
 	 */
 	public static String getHtmlContent(String url) {
-
-		DefaultHttpClient httpclient = new DefaultHttpClient();
+		return "";
+	}
+		/*DefaultHttpClient httpclient = new DefaultHttpClient();
 		HttpGet httpget = new HttpGet(url);
 
 		httpget.addHeader("User-Agent",
@@ -56,5 +57,5 @@ public class HttpUtil {
 
 		return null;
 
-	}
+	}*/
 }
