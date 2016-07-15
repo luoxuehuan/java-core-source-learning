@@ -28,7 +28,7 @@ public class ClientDemo {
 		/**
 		 * 创建客户端socket服务。
 		 */
-		Socket socket = new Socket("127.0.0.1",10002);
+		Socket socket = new Socket("127.0.0.1",9999);
 		
 		/**
 		 * 获取socket流中的输出流。
@@ -38,7 +38,7 @@ public class ClientDemo {
 		/**
 		 * 使用输出流将指定的数据写出去
 		 */
-		out.write("tcp演示，哥们又来了".getBytes());
+		out.write("hadoop".getBytes());
 		
 		//关闭资源（其实是将连接断开）
 		socket.close();
