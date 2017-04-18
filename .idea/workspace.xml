@@ -2,115 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56610729-6bf9-45a5-aaac-ceadf41c19b0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javasource.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-pool-1.5.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/commons-pool2-2.4.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jedis-2.7.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/junit-4.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/String/StringBufferTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/String/StringBuiderTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/String/StringTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/cache/redis/RedisJava.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/cache/redis/RedisUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/cache/redis/TestRedis.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/ArrayListTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/ConcurrentHashMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/HashMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/HashMap源码分析" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/HashSetTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/HashTableTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/IdentityHashMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/LinkedHashMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/LinkedHashSetTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/LinkedListTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/collection/TreeMapTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/inputoutputstream/ChaWriter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/inputoutputstream/CopyDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/inputoutputstream/CopyMp3Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/inputoutputstream/ReadKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/readerwriter/BufferedReaderDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/readerwriter/BufferedWriterDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/readerwriter/CopyText.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/readerwriter/FileReaderDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/readerwriter/FileReaderDemo2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/readerwriter/FileWriterDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/io/readerwriter/MyBufferedReader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/io_nio/test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/java8test/ATest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/java8test/LambdaDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/java8test/Trans.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/ie_server/MyBrowser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/ie_server/MyTomcat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/ie_server/URLDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/ClientDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/ClientDemo2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/ServeDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/ServeDemo2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/test/TestTransTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/test/TransClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/test/TransServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/uploadpic/UploadPicClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/uploadpic/UploadPicServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/uploadpic/UploadTask.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/uploadtext/UploadClient.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/tcp/uploadtext/UploadServer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/udp/ChatDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/udp/NCLk.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/udp/Rece.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/udp/Send.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/udp/UDPReceDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/udp/UDPSendDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/net/网络编程.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/sort/Sort.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/TicketWindowtest/Bank.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/TicketWindowtest/TicketWindow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Strategy/AddStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Strategy/CalcStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Strategy/Calculator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Strategy/StrategyTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Strategy/SubStrategy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Template/Diagram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Template/StarDiagram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/designPattern2fromThread/Template/TemplateTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/extendsthread/DemoTest1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/extendsthread/ThreadDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/impRunnable/Bank2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/impRunnable/TicketWindow2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/thread/test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/Care.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/MathUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/NormalHash.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/TestHash.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/TestInt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/TestString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/FileUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/HttpUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/MD5.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/Model.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/ModelUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/NumberUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/PackageUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/PathUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/ProcessUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/PropertiesOperate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/StringUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/TestStringUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/TimeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/UnicodeUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/java/util/hdutil/XmlUtil.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-core/pom.xml" afterPath="$PROJECT_DIR$/java-core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-core/src/main/java/com/java/java8test/ATest.java" afterPath="$PROJECT_DIR$/java-core/src/main/java/com/java/java8test/ATest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/java-core/target/" />
+    <ignored path="$PROJECT_DIR$/java-source/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,21 +24,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ATest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/java8test/ATest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java-core/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="120">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -151,11 +44,81 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-source/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringBufferTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/String/StringBufferTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringBuiderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/String/StringBuiderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/String/StringTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/thread/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MathUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/util/MathUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-core/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -182,6 +145,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java-core/pom.xml" />
+        <option value="$PROJECT_DIR$/java-core/src/main/java/com/java/java8test/ATest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -222,7 +187,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-core-source-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -862,12 +879,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492507632878</updated>
-      <workItem from="1492507635850" duration="228000" />
+      <workItem from="1492507635850" duration="750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228000" />
+    <option name="totallyTimeSpent" value="750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -928,10 +945,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/cache/redis/RedisJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/cache/redis/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/cache/redis/TestRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/ArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/ConcurrentHashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/HashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/HashSetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/HashTableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/IdentityHashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/LinkedHashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/collection/LinkedHashSetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/io_nio/io/inputoutputstream/CopyDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/io_nio/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/net/ie_server/MyBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/sort/Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-755">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/String/StringBufferTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/String/StringBuiderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/String/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/thread/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/util/MathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="330">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-core/src/main/java/com/java/java8test/ATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -944,10 +1129,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java-source/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding />
         </state>
       </provider>
