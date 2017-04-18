@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javasource.iml" filepath="$PROJECT_DIR$/javasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/java-core.iml" filepath="$PROJECT_DIR$/java-core/java-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core-source-learning.iml" filepath="$PROJECT_DIR$/java-core-source-learning.iml" />
     </modules>
   </component>
 </project>
