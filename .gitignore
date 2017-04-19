@@ -4,4 +4,7 @@ java-core/java-core.iml
 java-core/target/
 java-source/java-source.iml
 java-source/target/
+
+java-jvm/java-jvm.iml
+java-jvm/target/
 *.iml
