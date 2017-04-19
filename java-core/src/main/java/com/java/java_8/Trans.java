@@ -1,4 +1,4 @@
-package com.java.java8test;
+package com.java.java_8;
 
 import java.util.Map;
 
