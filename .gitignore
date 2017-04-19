@@ -1,5 +1,7 @@
 /bin/
 .idea/*
 java-core/java-core.iml
+java-core/target/
 java-source/java-source.iml
+java-source/target/
 *.iml
