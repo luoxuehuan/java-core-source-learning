@@ -4,6 +4,6 @@
 public class Test {
 
     public static void main(String[] arg){
-        System.out.print("study");
+        System.out.print("stud y");
     }
 }
