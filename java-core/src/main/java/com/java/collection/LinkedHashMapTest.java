@@ -38,8 +38,29 @@ public class LinkedHashMapTest {
 		Map.Entry e = (Map.Entry) tit.next();  
 		System.out.println("Key: " + e.getKey() + "--Value: "  
 		+ e.getValue());  
-		}  
-		  
+		}
+
+		/**
+		 * 它是基于HashMap来做的，真正的存储单元还是用数组来实现的。
+		 * 不过它做了一下手脚，它的每一个实体，就是LinkedHashMap.Entry的实现是用了链表形式，
+		 * 实体虽然是以Hash的顺序存放在Map的数组table里面，
+		 * 但是实体之间却用链表的形式保持了存入的先后关系。
+		 *
+		 *
+
+		 LinkedHashMap的Entry是有before和after的。
+
+		 HashMap.Node subclass for normal LinkedHashMap entries.
+		 static class Entry<K,V> extends HashMap.Node<K,V> {
+		 	//before 和after
+			LinkedHashMap.Entry<K,V> before, after;
+			Entry(int hash, K key, V value, HashMap.Node<K,V> next) {
+				super(hash, key, value, next);
+			}
+		}
+
+
+		 */
 		//LinkedHashMap  
 		System.out.println("--LinkedHashMap根据输入的顺序输出--");  
 		LinkedHashMap lhsMap=new LinkedHashMap();  
