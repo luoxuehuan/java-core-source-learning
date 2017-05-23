@@ -4,6 +4,7 @@ package com.java.guava;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.List;
 
 import static com.google.common.base.Preconditions.*;
@@ -19,11 +20,11 @@ public class GuavaFileTest {
 
     public static void  main(String[] arg){
         GuavaFileTest guavaFileTest = new GuavaFileTest();
-        guavaFileTest.demoFileWrite("./data/test2.txt","12345");
+        //guavaFileTest.demoFileWrite("./data/test2.txt","12345");
 
 
        // guavaFileTest.demoFileRead("");
-        //guavaFileTest.demoBigFileRead("");
+        guavaFileTest.demoBigFileRead("");
 
     }
 
@@ -74,7 +75,15 @@ public class GuavaFileTest {
         }
     }
     /**
-     * 演示读取（小）文件
+     * 演示读取（大）文件 1G  读取到内存中 内存会OOM
+     * 文件的所有行都被存储在内存中。
+     *
+     * 我们通常不需要把文件的所有行一次性地放入内存中
+     *
+     * 解决：
+     * 通过行迭代，而不是把所有行都放在内存中。
+     *
+     * @link http://www.importnew.com/14512.html
      *
      * @param fileName 要写入文件的文件名
      */
@@ -82,13 +91,15 @@ public class GuavaFileTest {
         String testFilePath = "./data/test1.txt";
         File testFile = new File(testFilePath);
         CounterLine counter = new CounterLine();
+        //List<String> lines = null;
         try {
-            Files.readLines(testFile, Charsets.UTF_16, counter);
+            Files.readLines(testFile, Charsets.UTF_8, counter);
+            out.println(Files.readFirstLine(testFile,  Charsets.UTF_8));
+            out.println(Files.toString(testFile,Charsets.UTF_8));
+            out.println(counter.getResult());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(counter.getResult());
-
     }
 
 
