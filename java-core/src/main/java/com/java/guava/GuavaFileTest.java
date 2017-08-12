@@ -1,14 +1,13 @@
 package com.java.guava;
 
 
-
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.List;
 
 import static com.google.common.base.Preconditions.*;
 import static java.lang.System.*;
+
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
 import com.google.common.io.LineProcessor;
@@ -18,12 +17,12 @@ import com.google.common.io.LineProcessor;
  */
 public class GuavaFileTest {
 
-    public static void  main(String[] arg){
+    public static void main(String[] arg) {
         GuavaFileTest guavaFileTest = new GuavaFileTest();
         //guavaFileTest.demoFileWrite("./data/test2.txt","12345");
 
 
-       // guavaFileTest.demoFileRead("");
+        // guavaFileTest.demoFileRead("");
         guavaFileTest.demoBigFileRead("");
 
     }
@@ -35,20 +34,17 @@ public class GuavaFileTest {
      * @param fileName 要写入文件的文件名
      * @param contents 要写入的文件内容
      */
-    public void demoFileWrite(final String fileName, final String contents)
-    {
+    public void demoFileWrite(final String fileName, final String contents) {
         checkNotNull(fileName, "Provided file name for writing must NOT be null.");
         checkNotNull(contents, "Unable to write null contents.");
         final File newFile = new File(fileName);
-        try
-        {
+        try {
             Files.write(contents.getBytes(), newFile);
         } catch (IOException fileIoEx) {
-            err.println(  "ERROR trying to write to file '" + fileName + "' - "
+            err.println("ERROR trying to write to file '" + fileName + "' - "
                     + fileIoEx.toString());
         }
     }
-
 
 
     /**
@@ -74,18 +70,18 @@ public class GuavaFileTest {
             System.out.println(line);
         }
     }
+
     /**
      * 演示读取（大）文件 1G  读取到内存中 内存会OOM
      * 文件的所有行都被存储在内存中。
-     *
+     * <p>
      * 我们通常不需要把文件的所有行一次性地放入内存中
-     *
+     * <p>
      * 解决：
      * 通过行迭代，而不是把所有行都放在内存中。
      *
-     * @link http://www.importnew.com/14512.html
-     *
      * @param fileName 要写入文件的文件名
+     * @link http://www.importnew.com/14512.html
      */
     public void demoBigFileRead(final String fileName) {
         String testFilePath = "./data/test1.txt";
@@ -94,8 +90,8 @@ public class GuavaFileTest {
         //List<String> lines = null;
         try {
             Files.readLines(testFile, Charsets.UTF_8, counter);
-            out.println(Files.readFirstLine(testFile,  Charsets.UTF_8));
-            out.println(Files.toString(testFile,Charsets.UTF_8));
+            out.println(Files.readFirstLine(testFile, Charsets.UTF_8));
+            out.println(Files.toString(testFile, Charsets.UTF_8));
             out.println(counter.getResult());
         } catch (IOException e) {
             e.printStackTrace();
@@ -110,24 +106,19 @@ public class GuavaFileTest {
      * @param targetFileName 目标文件名
      */
     public void demoSimpleFileCopy(
-            final String sourceFileName, final String targetFileName)
-    {
+            final String sourceFileName, final String targetFileName) {
         checkNotNull(sourceFileName, "Copy source file name must NOT be null.");
         checkNotNull(targetFileName, "Copy target file name must NOT be null.");
         final File sourceFile = new File(sourceFileName);
         final File targetFile = new File(targetFileName);
-        try
-        {
+        try {
             Files.copy(sourceFile, targetFile);
-        }
-        catch (IOException fileIoEx)
-        {
+        } catch (IOException fileIoEx) {
             err.println(
                     "ERROR trying to copy file '" + sourceFileName
                             + "' to file '" + targetFileName + "' - " + fileIoEx.toString());
         }
     }
-
 
 
     /**
@@ -136,21 +127,17 @@ public class GuavaFileTest {
      * @param fileName1 比较的文件1文件名
      * @param fileName2 比较的文件2文件名
      */
-    public void demoEqual(final String fileName1, final String fileName2)
-    {
+    public void demoEqual(final String fileName1, final String fileName2) {
         checkNotNull(fileName1, "First file name for comparison must NOT be null.");
         checkNotNull(fileName2, "Second file name for comparison must NOT be null.");
         final File file1 = new File(fileName1);
         final File file2 = new File(fileName2);
-        try
-        {
+        try {
             out.println(
                     "File '" + fileName1 + "' "
                             + (Files.equal(file1, file2) ? "IS" : "is NOT")
                             + " the same as file '" + fileName2 + "'.");
-        }
-        catch (IOException fileIoEx)
-        {
+        } catch (IOException fileIoEx) {
             err.println(
                     "ERROR trying to compare two files '"
                             + fileName1 + "' and '" + fileName2 + "' - " + fileIoEx.toString());
@@ -160,9 +147,10 @@ public class GuavaFileTest {
 
     static class CounterLine implements LineProcessor<Integer> {
         private int rowNum = 0;
+
         @Override
         public boolean processLine(String line) throws IOException {
-            rowNum ++;
+            rowNum++;
             return true;
         }
 

@@ -20,10 +20,10 @@ public class UploadServer {
 		Socket s = ss.accept();
 		
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(s.getInputStream()));
+		String fileName = "streaming_"+String.valueOf(System.currentTimeMillis());
+		BufferedWriter bufw = new BufferedWriter(new FileWriter(fileName));
 		
-		BufferedWriter bufw = new BufferedWriter(new FileWriter("server.txt"));
-		
-		String line  = null;
+		String line;
 		
 		
 		/**

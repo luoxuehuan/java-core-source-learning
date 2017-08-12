@@ -9,15 +9,15 @@ import java.util.stream.Collectors;
  */
 
 /**
- 流的操作
- 接下来，当把一个数据结构包装成 Stream 后，就要开始对里面的元素进行各类操作了。常见的操作可以归类如下。
- Intermediate：(中间的 transform)
- map (mapToInt, flatMap 等)、 filter、 distinct、 sorted、 peek、 limit、 skip、 parallel、 sequential、 unordered
- Terminal：（终端的 action）
- forEach、 forEachOrdered、 toArray、 reduce、 collect、 min、 max、 count、 anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 iterator
- Short-circuiting：（短-环形 回路）
- anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 limit
- 我们下面看一下 Stream 的比较典型用法。
+ * 流的操作
+ * 接下来，当把一个数据结构包装成 Stream 后，就要开始对里面的元素进行各类操作了。常见的操作可以归类如下。
+ * Intermediate：(中间的 transform)
+ * map (mapToInt, flatMap 等)、 filter、 distinct、 sorted、 peek、 limit、 skip、 parallel、 sequential、 unordered
+ * Terminal：（终端的 action）
+ * forEach、 forEachOrdered、 toArray、 reduce、 collect、 min、 max、 count、 anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 iterator
+ * Short-circuiting：（短-环形 回路）
+ * anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 limit
+ * 我们下面看一下 Stream 的比较典型用法。
  */
 public class StreamExamples {
 
@@ -72,29 +72,29 @@ public class StreamExamples {
         items.stream().forEach(System.out::println);
     }
 
-    public static void groupingBy( ){
+    public static void groupingBy() {
 
-        List<String> items = Arrays.asList("apple","banala","apple");
-        Map<String,Long> result = items.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+        List<String> items = Arrays.asList("apple", "banala", "apple");
+        Map<String, Long> result = items.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
-        Map<String,Long> flatMap = new LinkedHashMap<>();
-        result.entrySet().stream().sorted(Map.Entry.<String,Long>comparingByValue().reversed()).forEachOrdered(e -> flatMap.put(e.getKey(),e.getValue()));
+        Map<String, Long> flatMap = new LinkedHashMap<>();
+        result.entrySet().stream().sorted(Map.Entry.<String, Long>comparingByValue().reversed()).forEachOrdered(e -> flatMap.put(e.getKey(), e.getValue()));
         System.out.println(flatMap);
     }
 
     /**
      * Java 8 的排序、取值实现
-     *
+     * <p>
      * Stream 的并行操作依赖于 Java7 中引入的 Fork/Join 框架（JSR166y）来拆分任务和加速处理过程
      * 1.0-1.4 中的 java.lang.Thread
      * 5.0 中的 java.util.concurrent
      * 6.0 中的 Phasers 等
      * 7.0 中的 Fork/Join 框架
      * 8.0 中的 Lambda
-     *
+     * <p>
      * 数据源本身可以是无限的。
      */
-    public static void sortAndGet(){
+    public static void sortAndGet() {
 
         /*
         List<Integer> transactionsIds = transactions.parallelStream().
@@ -105,7 +105,7 @@ public class StreamExamples {
         */
     }
 
-    public static void map(){
+    public static void map() {
         List<Integer> nums = Arrays.asList(1, 2, 3, 4);
         List<Integer> squareNums = nums.stream().
                 map(n -> n * n).

@@ -14,7 +14,7 @@ package com.java.jvm;
  *
  *
  * 增大 Eden 大小后清单 1 运行输出
- * -XX:+PrintGCDetails -Xmx20M -Xms20M -Xmn6M
+ * -XX:+PrintGCDetails -Xmx20M -Xms20M -Xmn6M -Xss 128K
  *
  *
  * 清单 1 所示代码尝试分配 4MB 内存空间，观察一下它的内存使用情况。
@@ -26,5 +26,8 @@ public class PutInEden {
         b2 = new byte[1024 * 1024];
         b3 = new byte[1024 * 1024];
         b4 = new byte[1024 * 1024];
+        while (true){
+
+        }
     }
 }

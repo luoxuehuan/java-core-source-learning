@@ -27,11 +27,17 @@ public class ClientDemo2 {
 		 */
 		
 	
-		Socket socket = new Socket("127.0.0.1",10002);
-	
+		//Socket socket = new Socket("127.0.0.1",10002);
+		Socket socket = new Socket("ds101.navroom.com",88);
+
 		OutputStream out = socket.getOutputStream();
+
+		String msg = "NDTP/1.0 HELLO\n" +
+				"Accept-Encoding: gzip, deflate\n" +
+				"Content-Length: 7\n" +
+				"pid=123";
 	
-		out.write("tcp演示，哥们又来了".getBytes());
+		out.write(msg.getBytes());
 		
 		
 		//获取服务端返回的数据，使用socket读取流。
