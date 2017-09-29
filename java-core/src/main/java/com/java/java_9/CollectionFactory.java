@@ -16,7 +16,6 @@ public class CollectionFactory {
          */
         List<String> str = List.of("a","b","c","d");
         str.stream().forEach(System.out::println);
-
         ProcessHandle.current();
 
     }
